@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violavizn Article Platform</title>
+    <link rel="stylesheet" href="Violavizn.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="topic">ARTICLEn PLATFORM</h1>
+    </header>
+
+    <nav id="navcont">
+        <a href="#" class="navchl1">HOME </a> 
+        <a href="aws.html" class="navchl2">AWS </a> 
+        <a href="#" class="navchl3">AZURE</a> 
+        <a href="login.html" class="navchl4">Login |</a>
+        <a href="register.html" class="navchl5">| Register</a>
+    </nav>
+
+    <article><center>
+        <h2 class="arti">Latest Articles:</h2>
+        <div id="latestArticles"></div>
+    </article></center>
+
+    <!-- <article>
+        <h2>Author Register</h2>
+        <form id="registrationForm">
+            <label for="authorName">Author Name:</label>
+            <input type="text" id="authorName" required>
+            <button type="submit">Register</button>
+        </form>
+    </article>
+
+    <article>
+        <h2>Author Login</h2>
+        <form id="loginForm">
+            <label for="loginAuthorName">Author Name:</label>
+            <input type="text" id="loginAuthorName" required>
+            <button type="submit">Login</button>
+        </form>
+    </article> -->
+
+    <article><center>
+        <h2 class="arti">Write Article</h2>
+        <form id="articleForm" class="arti">
+            <label for="articleContent" >Article Content:</label>
+            <textarea id="articleContent" required></textarea><br/>
+            <label for="articleCategory">Article Category:</label>
+            <select id="articleCategory">
+                <option value="AWS">AWS</option>
+                <option value="Azure">Azure</option>
+            </select><br/>
+            <button type="submit" id="publish">Publish Article</button>
+        </form>
+    </article></center>
+
+    <footer>
+        &copy; 2023 Article Platform
+    </footer>
+
+    <script>
+        const latestArticlesContainer = document.getElementById('latestArticles');
+        const articleForm = document.getElementById('articleForm');
+        const registrationForm = document.getElementById('registrationForm');
+        const loginForm = document.getElementById('loginForm');
+
+        articleForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const articleContent = document.getElementById('articleContent').value;
+            const articleCategory = document.getElementById('articleCategory').value;
+            const authorName = 'akram'; 
+            const publicationTime = new Date().toLocaleString();
+
+            const articleElement = document.createElement('div');
+            articleElement.innerHTML = `<p><strong>${authorName}</strong> - ${publicationTime}</p>
+                                        <p><em>${articleCategory}</em></p>
+                                        <p>${articleContent}</p>`;
+            latestArticlesContainer.innerHTML = 'AKRAM BASHA';
+            latestArticlesContainer.appendChild(articleElement);
+        });
+
+        registrationForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Registration Successful');
+        });
+
+        loginForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Login Successful');
+        });
+    </script>
+
+</body>
+</html>
