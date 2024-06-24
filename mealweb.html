@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>meal web</title>
+    <style>
+        #box1{
+            background-color:#ce0e3a;
+            color: aliceblue;
+            height: 100px;
+            position: sticky;
+            top: 0px;
+        }
+        #button1{
+            font-family:fangsong;
+            font-size: x-large;
+            background-color:#1e3932;
+            color: rgb(255, 255, 255);
+            margin: 35px 0px 0px 200px;
+            border-color: #ce0e3a;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+            
+        }
+        #button1:hover{
+            font-size: x-large;
+            background-color:#1e3932;
+            color:#cacacaf4 ;
+            margin: 35px 0px 0px 200px;
+            border-color: aliceblue;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+
+        }
+        #button2{
+            font-family:fangsong;
+            font-size: x-large;
+            background-color: #1e3932;
+            color: rgb(255, 255, 255);
+            margin: -22px 0px 0px 375px;
+            border-color: #ce0e3a;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+
+        }
+        #button2:hover{
+            font-size: x-large;
+            background-color: #1e3932;
+            color:#cacacaf4 ;
+            margin: -22px 0px 0px 375px;
+            border-color: aliceblue;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+
+        }
+        #button3{
+            font-family:fangsong;
+            font-size: x-large;
+            background-color: #1e3932;
+            color: rgb(255, 255, 255);
+            margin: -35px 0px 0px 1200px;
+            border-color:#ce0e3a ;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+
+        }
+        #button3:hover{
+            font-size: x-large;
+            background-color: #1e3932;
+            color: #cacacaf4;
+            margin: -35px 0px 0px 1200px;
+            border-color: aliceblue;
+            border-radius: 20px;
+            padding: 3px 10px 3px 10px;
+
+        }
+        #box2{
+            background-color: #1e3932;
+            
+        }
+        #cof{
+            margin: 25px;
+            width: 1400px;
+        }
+    </style>
+</head>
+<body>
+    <header id="box1">
+        <button id="button1" onclick="but1()">Breakfast</button>
+        <button id="button2" onclick="but2()">Lunch</button>
+        <button id="button3" onclick="but3()">Dinner</button>
+    </header>
+    <center><div id="box2"><img src="cof.jpg" alt="coffee" id="cof"></div></center>
+    <!-- <p><img src="starbucks1.jpg" alt="coffee" id="bot">mealmeal</p> -->
+    <script>
+        function but1(){
+        document.getElementById("box2").innerHTML='<img src="strbucs brkfst.png">';
+        }
+        function but2(){
+        document.getElementById("box2").innerHTML='<img src="strbucs lunch.jfif">';
+        }
+        function but3(){
+        document.getElementById("box2").innerHTML='<img src="strbucs dinner.jpg">';
+        }
+    </script>
+</body>
+</html>
