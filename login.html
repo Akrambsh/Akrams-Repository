@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="login.css"/>
+<!-- Include JS File Here -->
+<script src="login.js"></script>
+</head> 
+<body>
+    
+    <header>
+        <h1 id="topic">ARTICLE PLATFORM</h1>
+    </header>
+
+    <nav id="navcont">
+        <a href="Violavizn.html" class="navchl1">HOME </a> 
+        <a href="aws.html" class="navchl2">AWS </a> 
+        <a href="#" class="navchl3">AZURE</a> 
+        <a href="login.html" class="navchl4">Login |</a>
+        <a href="register.html" class="navchl5">| Register</a>
+    </nav>
+
+    <h1 id="font">LOGIN</h1>
+<div class="container">
+<div class="main">
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : akram<br/>Password : articleproject30</b></span>
+</div>
+</div>
+<footer>
+    &copy; 2023 Article Platform
+</footer>
+</body>
+</html>
