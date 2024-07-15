@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 200px;
+    padding-top: 25px;
+}
+
+#play-now{
+    background-color: #00704A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#play-now:hover, #reset-button:hover {
+    background-color: #004d33;
+}
+
+#gameCanvas {
+    background: #ffffff;
+    border: 2px solid #00704A;
+    border-radius: 10px;
+}
+
+#play-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#reset-button {
+    margin-top: 20px;
+}
+
+#font1{
+    color: #00704A;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* padding:120px 100px 0px 850px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    bottom: 50px;
+}
+
+#reset-button{
+    background-color: #00704A;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    position: relative;
+    left: 490px;
+}
