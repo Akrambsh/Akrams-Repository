@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="portfoliomedia.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Akram Basha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akram Basha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src= "C:\Users\Akrambasha\Downloads\IMG_20240513_151723.jpg" alt="Akram Basha profile picture" id="section__pic-container1"/>
+    </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Akram Basha</h1>
+        <p class="section__text__p2">Junior Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('file:///C:/Users/Akrambasha/interview%20prep/assets/AKRAM%20BASHA%20-%20RESUME.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\linkedin png.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/akram-basha-a-907183270/'"
+          />
+          <img
+            src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\github logo.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Akrambsh/Akrams-Repository'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container2">
+          <img
+            src="C:\Users\Akrambasha\Downloads\IMG_20240624_211149.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\batch.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3 Months In Sales <br />4 Months Intern in DISYS PVT LTD<br/>8 Months Intern as Web Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.com. Bachelors Degree<br />Full Stack Development</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+I am a passionate Fullstack web developer with expertise in HTML5, CSS3, JavaScript, jQuery, Bootstrap, React.js, Python, Django, and MySQL. 
+I've worked on various projects, including a Starbucks clone website,railticket booking, showcasing my skills in both front-end and back-end development. 
+Previously, I gained valuable industry experience at DISYS India Pvt Ltd.
+I am eager to bring my skills and enthusiasm to a dynamic and forward-thinking company.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\arrow.png"
+        alt="Arrow icon"
+        id="aboutme_arrow"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                  id="jicon"
+                />
+                <div id="jwords">
+                  <h3>JQuery</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div id="sqlwords">
+                  <h3>MySQL</h3>
+                  <p>basic</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\tick.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\strbucs lunch.jfif"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Starbucks Sample </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Akrambsh/Akrams-Repository/blob/main/starbcks%20meal.html'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='file:///C:/Users/Akrambasha/homework/mealweb.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\Akrambasha\Downloads\OIP.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Rail Ticket Booking</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Akrambsh/Akrams-Repository/blob/main/railticket.html'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='file:///C:/Users/Akrambasha/homework/railticket.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\starbucks.jfif"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Starbucks</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Akrambsh/Akrams-Repository/blob/main/starbucksoff.html'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='file:///C:/Users/Akrambasha/homework/starbucksoff.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        id="projectarrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+            src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\gmail png.jpg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:akrambasha9176@gmail.com">akrambasha9176@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="C:\Users\Akrambasha\OneDrive\Pictures\Saved Pictures\linkedin png.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://linkedin.com/in/akram-basha-a-907183270/'>LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="C:\Users\Akrambasha\Downloads\contact 2.jpg"
+            alt="contact icon"
+            class="icon contact-icon"
+          />
+          <p><b>8072605019</b></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Akram Basha. All Rights Reserved.</p>
+    </footer>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
